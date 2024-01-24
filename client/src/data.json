@@ -1,0 +1,72 @@
+[
+    {
+        "id": "7f2a8a6e-ff47-417c-a438-07a310fb63cd",
+        "image": [
+            "https://i.postimg.cc/zGHJ0chg/Picture1.png",
+            "https://i.postimg.cc/0Np9qKc5/Picture3.png",
+            "https://i.postimg.cc/ZRbzt7Wj/Picture7.png"
+        ],
+        "title": "Cruise Tasik",
+        "desc": "Indulge in a leisurely 45-minute voyage aboard a Putrajaya cruise. Immerse yourself inthe beauty of Putrajaya Lake as you embark on a sightseeing cruise, capturingafull panorama of the surroundings.",
+        "type": "bookTypeOne",
+        "preference": [
+            {
+                "title": "Malaysian",
+                "price": {
+                    "adult": 28,
+                    "child": 18,
+                    "senior": 18
+                },
+                "details": [
+                    "Valid only for Malaysian Citizens"
+                ]
+            },
+            {
+                "title": "Non-Malaysian",
+                "price": {
+                    "adult": 40,
+                    "child": 30,
+                    "senior": 30
+                },
+                "details": [
+                    "Valid only for Non Malaysian Citizens"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "27cda2d5-998a-4158-b1c8-edfd47a45aec",
+        "image": [
+            "https://i.postimg.cc/sDXfZXDK/Ewv-F35-GVIAM-BPE.jpg",
+            "https://i.postimg.cc/C5Mh7MCh/7.jpg",
+            "https://i.postimg.cc/4ynCnYb9/Picture6.png"
+        ],
+        "title": "Perahu Dondang Sayang",
+        "desc": "Embark on a journey of nostalgia aboard our traditional boats. Serenely glide through the waters of Putrajaya Lake, listening to the gentle hum of the motor boat as it navigates you through the picturesque surroundings.",
+        "type": "bookTypeTwo",
+        "preference": [
+            {
+                "title": "Malaysian",
+                "price": {
+                    "adult": 20,
+                    "child": 18.5,
+                    "senior": 18.5
+                },
+                "details": [
+                    "Valid only for Malaysian Citizens"
+                ]
+            },
+            {
+                "title": "Non-Malaysian",
+                "price": {
+                    "adult": 38,
+                    "child": 24,
+                    "senior": 24
+                },
+                "details": [
+                    "Valid only for Non Malaysian Citizens"
+                ]
+            }
+        ]
+    }
+]
