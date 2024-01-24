@@ -18,14 +18,11 @@ const Booking = () => {
         adultTotal,
         childCount,
         childTotal,
-        seniorCount,
-        seniorTotal,
         totalAmount,
         loading,
         type,
         bookingTitle,
         pref,
-        timeSlot
     } = useSelector(store => store.booking)
     const [name, setName] = useState("")
     const [email, setEmail] = useState("")
@@ -44,7 +41,6 @@ const Booking = () => {
                 bookingDate,
                 adultCount,
                 childCount,
-                seniorCount,
                 totalAmount,
                 bookingTitle,
                 bookingType: type,
@@ -69,7 +65,7 @@ const Booking = () => {
     return (
         <section className='bookingMainContainer'>
             <div className="bookingWrapper">
-                <img className='banner' src={"https://i.postimg.cc/CKHp2Txz/Picture4.png"} alt="" />
+                <img className='banner' src={"https://i.postimg.cc/YSXF1CH5/Picture8.png"} alt="" />
                 <h1>Confirm and Pay</h1>
                 <div className="detailsWrapper">
                     <div className="detailsContainerWithTimeSlot">
@@ -77,12 +73,6 @@ const Booking = () => {
                             <p className='bookingType'>{bookingTitle}</p>
                             {pref && <p className='bookingType'>{pref}</p>}
                         </div>
-                        {
-                            timeSlot.name && <div className="">
-                            {timeSlot.name && <p className='bookingType'>{timeSlot.name}</p>}
-                            {timeSlot.timeSlot && <p className='bookingType'>{timeSlot.timeSlot}</p>}
-                        </div>
-                        }
                     </div>
                     <div className="topContainer">
                         <p>{bookingDate}</p>
@@ -102,13 +92,6 @@ const Booking = () => {
                             childCount === 0 ? "" : <div className="guest">
                                 <p> Child <span> X {childCount}</span></p>
                                 <span>MYR {childTotal}</span>
-                            </div>
-                        }
-
-                        {
-                            seniorCount === 0 ? "" : <div className="guest">
-                                <p> Senior <span> X {seniorCount}</span></p>
-                                <span>MYR {seniorTotal}</span>
                             </div>
                         }
 

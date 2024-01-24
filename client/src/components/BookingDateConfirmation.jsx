@@ -11,7 +11,6 @@ import PaxModal from './PaxModal';
 import axios from 'axios'
 import PreferenceTour from './PreferenceTour';
 import LoadingSpinner from './LoadingSpinner';
-import TimeSlotSelection from './TimeSlotSelection';
 
 
 function isPastDate(date) {

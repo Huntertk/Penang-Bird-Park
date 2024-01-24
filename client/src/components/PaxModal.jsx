@@ -86,8 +86,6 @@ const PaxModal = ({selectedDate}) => {
         </div>
         <p className='bookingType'>{bookingTitle}</p>
         {pref && <p className='bookingType'>{pref}</p>}
-        {timeSlot.name && <p>{timeSlot.name}</p>}
-        {timeSlot.timeSlot && <p>{timeSlot.timeSlot}</p>}
         <h1>Select number of tickets</h1>
         <div className="paxSelector">
                 <Pax  
