@@ -1,17 +1,12 @@
 import '../styles/preferenceTour.scss'
-import { preferenceData, publicHolidays } from '../data'
 import {useDispatch, useSelector} from 'react-redux'
 import { countTotalBookingAmount, setPreference } from '../features/booking/bookingSlice'
-import { format } from 'date-fns'
-// import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 
-const CardData = ({cardData, day, selectedDate}) => {
-    const {pref, pricing}  = useSelector(state => state.booking)
+const CardData = ({cardData}) => {
+    const {pref}  = useSelector(state => state.booking)
     const dispatch = useDispatch()
     let price = cardData.price.adult;
-    const formatDateToFull = selectedDate && format(selectedDate, 'PPP')
-    const publicHoliday = publicHolidays.includes(formatDateToFull)
     
     return (
         <div className="prefrenceTabCard">
@@ -42,7 +37,7 @@ const PreferenceTour = ({data, selectedDate}) => {
         <div className="prefrenceTabCardContainer">
             {
                 data.map((d, index) => (
-                    <CardData key={index} cardData={d} selectedDate={selectedDate} day={day}  />
+                    <CardData key={index} cardData={d} />
                 ))
             }
             

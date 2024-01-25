@@ -62,7 +62,6 @@ const PaxModal = ({selectedDate}) => {
         bookingDate,
         pref,
         bookingTitle,
-        timeSlot
     } = useSelector((store) => store.booking)
 
     const dispatch = useDispatch()

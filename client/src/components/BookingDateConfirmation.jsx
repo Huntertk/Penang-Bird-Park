@@ -101,7 +101,7 @@ const DateBtn = ({setSelectedDate, setCalenderOpen,selectedDate, calenderOpen, d
 
 const BookingDateConfirmation = () => {
     const dispatch = useDispatch()
-    const {isPaxModal, bookingDate, type,bookingTitle, pref, prefrenceOpt, timeSlot} = useSelector(store => store.booking)
+    const {isPaxModal, type, pref, prefrenceOpt} = useSelector(store => store.booking)
         const [selectedDate, setSelectedDate] = useState("")
         const [calenderOpen, setCalenderOpen] = useState(false)
         const [blockedDates, setBlockedDates] = useState([])
