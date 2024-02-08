@@ -19,7 +19,9 @@ export const createBooking = async (req, res) => {
         totalAmount,
         bookingType,
         bookingTitle,
-        responseClientUrl
+        responseClientUrl,
+        webisteName,
+        pref
     } = req.body;
     try {
         const session = await stripe.checkout.sessions.create({
@@ -30,6 +32,16 @@ export const createBooking = async (req, res) => {
                         currency: 'myr',
                         product_data: {
                             name: bookingTitle,
+                            metadata:{
+                                bookingDate, 
+                                adultCount, 
+                                childCount, 
+                                pref, 
+                                name, 
+                                email, 
+                                mobileNumber, 
+                                webisteName
+                            }
                         },
                         unit_amount: totalAmount * 100,
                     },
