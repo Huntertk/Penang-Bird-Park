@@ -20,7 +20,7 @@ export const createBooking = async (req, res) => {
         bookingType,
         bookingTitle,
         responseClientUrl,
-        webisteName,
+        websiteName,
         pref
     } = req.body;
     try {
@@ -40,7 +40,7 @@ export const createBooking = async (req, res) => {
                                 name, 
                                 email, 
                                 mobileNumber, 
-                                webisteName
+                                websiteName
                             }
                         },
                         unit_amount: totalAmount * 100,
